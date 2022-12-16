@@ -1,4 +1,4 @@
-txt_input = open("day two\input.txt","r")
+txt_input = open("day 2\input.txt","r")
 guide=txt_input.read().split("\n")
 final_r=0
 

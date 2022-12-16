@@ -1,4 +1,4 @@
-text_input= open("day three\input.txt","r")
+text_input= open("day 3\input.txt","r")
 prioSum=0
 rucksacks=text_input.readlines()
 nbgroups=int(len(rucksacks)/3)

@@ -1,4 +1,4 @@
-txt_input=open("day five\input.txt","r")
+txt_input=open("day 5\input.txt","r")
 procedures=[]
 stacks=[
     ["J","Z","G","V","T","D","B","N"],
@@ -21,9 +21,10 @@ for procedure in procedures:
     fr=int(procedure.split(" from ")[1].split(" to ")[0].strip())
     to=int(procedure.split(" from ")[1].split(" to ")[1].strip())
     for j in range(0,nbs):
-        if(len(stacks[fr-1])>0):
+        if(nbs==1 and len(stacks[fr-1])>0):
             stacks[to-1].insert(0,stacks[fr-1].pop(0))
-
+        elif(nbs>1 and len(stacks[fr-1])>0):
+            stacks[to-1].insert(0,stacks[fr-1].pop(nbs-j-1))
 #affichage :
 r=""
 for stack in stacks:

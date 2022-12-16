@@ -1,4 +1,4 @@
-txt_input=open("day six\input.txt","r")
+txt_input=open("day 6\input.txt","r")
 datastream=txt_input.readline()
 last14char=[]
 i=0

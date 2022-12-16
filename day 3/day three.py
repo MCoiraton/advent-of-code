@@ -1,4 +1,4 @@
-rucksacks= open("day three\input.txt","r")
+rucksacks= open("day 3\input.txt","r")
 prioSum=0
 for line in rucksacks.readlines():
     #séparation des deux compartiments
