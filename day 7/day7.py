@@ -1,0 +1,1 @@
+txt_input=open("day 7\input.txt","r")
